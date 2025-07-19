@@ -1,1 +1,30 @@
+package com.jspiders.abstract1;
+abstract class Demo
+{
+ abstract void test();
+ abstract void disp();
+}
+class Sample extends Demo
+{
+
+	@Override
+	void test() {
+		// TODO Auto-generated method stub
+		System.out.println("Excuating test.....");
+	}
+
+	@Override
+	void disp() {
+		// TODO Auto-generated method stub
+		System.out.println("Excuating disp.....");
+	}
+	
+}
+public class MainClass1 {
+ public static void main(String[] args) {
+	  Demo ref=new Sample();
+	  ref.test();
+	  ref.disp();
+}
+}
 
